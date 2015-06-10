@@ -1,0 +1,7 @@
+<h1>All Auction Items</h1>
+
+<ul>
+  {{#each}}
+  <li>{{#link-to 'auctionItem' this.id}}{{title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
