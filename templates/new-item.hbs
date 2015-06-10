@@ -1,0 +1,10 @@
+<h2>New Auction Item</h2>
+
+<form>
+  <div class="form-group">
+    <label for="text">Item:</label>
+    {{input value=title id="title" class="form-control"}}
+  </div>
+
+  <button class="btn btn-primary" {{action "save"}}>Submit</button>
+</form>

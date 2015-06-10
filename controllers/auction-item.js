@@ -1,4 +1,4 @@
-App.AuctionItemController = Ember.ObjectController.extend({
+App.ItemController = Ember.ObjectController.extend({
   isEditing: false,
   actions: {
     edit: function() {

@@ -1,4 +1,4 @@
-App.AuctionItemsController = Ember.ArrayController.extend({
+App.ItemsController = Ember.ArrayController.extend({
   actions: {
     sortByTitle: function() {
       this.set('sortProperties', ['title']);
