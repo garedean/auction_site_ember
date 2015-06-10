@@ -1,11 +1,9 @@
-App.ItemsController = Ember.ArrayController.extend({
+App.ItemController = Ember.ObjectController.extend({
   actions: {
-    sortByTitle: function() {
-      this.set('sortProperties', ['title']);
-    },
     delete: function() {
       if (confirm('Are you sure?')) {
         this.get('model').destroyRecord();
+        this.transitionToRoute('items');
       }
     }
   }

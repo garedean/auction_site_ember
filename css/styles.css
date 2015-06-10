@@ -1,12 +1,93 @@
+body {
+  background: #f3f3f3;
+  padding-top: 130px;
+}
+
+h1,h2, h3, h4, h5 {
+  font-family: "Georgia", serif;
+}
+
+.section-header {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.page-header {
+  color: white;
+}
+
 .nav-bar {
-  height: 200px;
-  background: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 130px;
+  background: #222;
+  border-bottom: 3px solid gold;
+  color: white;
 }
 
 .nav-bar h1 {
   font-family: "Georgia", serif;
-  color: white;
   margin-top: 0px;
   padding-top: 20px;
   font-size: 3.5em;
+  border-bottom: 1px solid gold;
+}
+
+.top-left {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: white;
+}
+
+/* Item Preview View */
+
+.itemImage {
+  width: 300px;
+  height: 200px;
+}
+
+.item-image-preview {
+  width: 200px;
+  float: right;
+}
+
+.item-info {
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+.items-wrapper a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+.items-wrapper .row {
+  margin-top: 10px;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  background: white;
+  padding: 15px 100px;
+  min-height: 100px;
+
+}
+
+.title {
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+}
+
+.singleItemProperty {
+  width: 120px;
+  display: inline-block;
 }

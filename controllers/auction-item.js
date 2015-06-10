@@ -7,5 +7,10 @@ App.ItemController = Ember.ObjectController.extend({
     save: function() {
       this.set('isEditing', false);
     }
+    delete: function() {
+      if (confirm('Are you sure?')) {
+        this.get('model').destoryRecord();
+      }
+    }
   }
 });

@@ -1,11 +1,11 @@
 <nav class="nav-bar">
-  <h1 class="text-center">Southebys Auction House</h1>
+  <div class="container">
+    <h1 class="page-header text-center">Southeby's</h1>
 
-  <ul class="nav navbar-nav">
-    <li>{{#link-to 'items'}}Auctions{{/link-to}}</li>
-  </ul>
+      {{#link-to 'items' classNames="top-left"}}All Items{{/link-to}}
+  </div>
 </nav>
 
-<div class="container">
+<div class="container-fluid">
   {{outlet}}
 </div>

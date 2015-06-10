@@ -1,9 +1,30 @@
-<h1>All Auction Items</h1>
+<h4 class="text-center section-header">All Auction Items</h4>
 
-<ul>
+{{#link-to 'new-item'}}Add Auction Item{{/link-to}}
+
+<div class="items-wrapper">
   {{#each}}
-  <li>{{#link-to 'item' this.id}}{{title}}{{/link-to}}</li>
-  {{/each}}
-</ul>
 
-<li>{{#link-to 'new-item'}}Add Auction Item{{/link-to}}</li>
+    {{#link-to 'item' this.id}}
+
+      <div class="row">
+        <span class="title">{{title}}</span>
+        <img class="item-image-preview" src="{{image}}">
+
+        <div class="item-info">
+          <ul>
+              <li><span class="description">Description: {{description}}</span></li>
+
+              <li><span class="owner">Current Owner: {{owner}}</span></li>
+
+              <li><span class="year-acquired">Year Acquired:  {{yearAcquired}}</span></li>
+          </ul>
+        </div>
+
+
+      </div>
+    {{/link-to}}
+  {{/each}}
+</div>
+<br>
+<br>

@@ -1,9 +1,15 @@
 <h1>{{title}}</h1>
 
-<form>
-  <div class="form-group">
-    <label for="item-name">Item Name</label>
+<ul>
+  <li><span class="singleItemProperty">Description:</span>{{description}}</li>
+  <li><span class="singleItemProperty">Owner:</span>{{owner}}</li>
+  <li><span class="singleItemProperty">Bid Number:</span>{{bidNumber}}</li>
+  <li><span class="singleItemProperty">Starting Price:</span>{{estStartingPrice}}</li>
+  <li><span class="singleItemProperty">History:</span>{{itemHistory}}</li>
+  <li><span class="singleItemProperty">Year Acquired:</span>{{yearAcquired}}</li>
+</ul>
 
-  </div>
-
-</form>
+<img class="itemImage" src="{{image}}">
+<br>
+<br>
+<button class="btn btn-danger" {{action "delete"}}>Delete</button>

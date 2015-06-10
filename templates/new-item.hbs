@@ -1,10 +1,53 @@
-<h2>New Auction Item</h2>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
 
-<form>
-  <div class="form-group">
-    <label for="text">Item:</label>
-    {{input value=title id="title" class="form-control"}}
+    <h2 class="section-header">New Auction Item</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="text">Item:</label>
+        {{input value=title class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="text">Description:</label>
+        {{input value=description class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="text">Current owner:</label>
+        {{input value=owner class="form-control"}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="text">Bid number:</label>
+        {{input value=bid-number class="form-control"}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="text">Estimated starting price:</label>
+        {{input value=est-starting-price class="form-control"}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="text">Item history:</label>
+        {{input value=item-history class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="text">Image url:</label>
+        {{input value=image class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="text">Year acquired:</label>
+        {{input value=year-acquired class="form-control"}}
+      </div>
+
+      <button class="btn btn-primary" {{action "save"}}>Submit</button>
+    </form>
   </div>
-
-  <button class="btn btn-primary" {{action "save"}}>Submit</button>
-</form>
+</div>
