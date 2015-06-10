@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+
+    <h2 class="section-header">New Auction:</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="text">Auction name:</label>
+        {{input value=name class="form-control"}}
+      </div>
+      
+      <button class="btn btn-primary" {{action "save"}}>Submit</button>
+    </form>
+  </div>
+</div>

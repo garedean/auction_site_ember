@@ -6,5 +6,6 @@ App.Item = DS.Model.extend({
   estStartingPrice: DS.attr(),
   itemHistory:      DS.attr(),
   image:            DS.attr(),
-  yearAcquired:     DS.attr()
+  yearAcquired:     DS.attr(),
+  category:         DS.attr()
 });

@@ -9,7 +9,8 @@ App.NewItemController = Ember.Controller.extend({
         estStartingPrice: this.get('est-starting-price'),
         itemHistory:      this.get('item-history'),
         image:            this.get('image'),
-        yearAcquired:     this.get('year-acquired')        
+        yearAcquired:     this.get('year-acquired'),
+        category:         this.get('category')
       });
 
       newItem.save();
