@@ -1,13 +1,19 @@
-<!-- <div id="page-border"></div> -->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
 
 <nav class="nav-bar">
   <div class="container">
-    {{#link-to 'auctions' classNames="page-header-link"}}
-      <h1 class="page-header text-center">Southeby's</h1>
-    {{/link-to}}
+    <div class="row text-center">
+      <div class="col-sm-4 col-sm-offset-4">
+        {{#link-to 'auctions' classNames="page-header-link"}}
+          <h1 class="page-header">Southeby's</h1>
+        {{/link-to}}
 
-    <!-- {{#link-to 'items' classNames="top-left"}}All Items{{/link-to}} -->
-
+        <span class="fancy text-center">Since 2015</span>
+      </div>
+    </div>
   </div>
 </nav>
 

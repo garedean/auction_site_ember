@@ -1,12 +1,13 @@
 <h4 class="text-center section-header">All Auctions</h4>
 
-{{#link-to 'new-auction'}}Add Auction{{/link-to}}
+{{#link-to 'new-auction' classNames="btn btn-default outline top-right"}}Add Auction{{/link-to}}
 
 <div class="items-wrapper">
   {{#each auction in model}}
     <div class="row">
       {{#link-to 'auction' auction}}
         <p class="title">{{auction.name}}</p>
+        <p class="description">{{auction.description}}</p>
       {{/link-to}}
     </div>
   {{/each}}
