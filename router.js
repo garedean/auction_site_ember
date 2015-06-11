@@ -5,5 +5,5 @@ App.Router.map(function() {
   });
   this.resource('new-auction');
   this.resource('items');
-  // this.resource('item', {path: 'items/:item_id'});
+  this.resource('item', {path: 'items/:item_id'});
 });

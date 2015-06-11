@@ -3,15 +3,36 @@
 <button class="btn btn-danger" {{action "delete"}}>Delete</button>
 
 {{outlet}}
-
+<br>
+<br>
 <p>{{#link-to 'new-item' this class="btn btn-success"}}Add new item to this collection{{/link-to}}</p>
 
-<!-- {{#each item in items itemController="items"}}ß
-  <p>
-    {{item.title}}
+{{#each item in items itemController="item"}}
+  <p class="items-wrapper">
+
+    {{#link-to 'item' item.id}}
+    <div class="row">
+      <span class="title">{{item.title}}</span>
+      <img class="item-image-preview" src="{{item.image}}">
+
+      <div class="item-info">
+        <ul>
+          <li><span class="description">Description: {{item.description}}</span></li>
+
+          <li><span class="owner">Current Owner: {{item.owner}}</span></li>
+
+          <li><span class="year-acquired">Year Acquired:  {{item.yearAcquired}}</span></li>
+          <br>
+          <span class="estStartingPrice">Starting Price:  {{item.estStartingPrice}}</span>
+        </ul>
+      </div>
+    </div>
+    {{/link-to}}
+
   </p>
 {{/each}}
 
-<button class="btn btn-danger" {{action "delete"}}>Delete this auction</button>
+
+<!-- <button class="btn btn-danger" {{action "delete"}}>Delete this auction</button>
 
 <p>{{#link-to 'new-item' this class="btn btn-success"}}New item{{/link-to}}</p> -->
