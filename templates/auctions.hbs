@@ -3,9 +3,9 @@
 {{#link-to 'new-auction'}}Add Auction{{/link-to}}
 
 <div class="items-wrapper">
-  {{#each}}
-    {{#link-to 'auction' this.id}}
-      <p class="title">{{name}}</p>
+  {{#each auction in model}}
+    {{#link-to 'auction' auction}}
+      <p class="title">{{auction.name}}</p>
     {{/link-to}}
   {{/each}}
 </div>

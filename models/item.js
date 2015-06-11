@@ -7,5 +7,6 @@ App.Item = DS.Model.extend({
   itemHistory:      DS.attr(),
   image:            DS.attr(),
   yearAcquired:     DS.attr(),
-  category:         DS.attr()
+  category:         DS.attr(),
+  auction:          DS.belongsTo('auction', {async: true})
 });

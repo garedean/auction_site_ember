@@ -1,6 +1,17 @@
 <h1>{{name}}</h1>
 
-
-
-
 <button class="btn btn-danger" {{action "delete"}}>Delete</button>
+
+{{outlet}}
+
+<p>{{#link-to 'new-item' this class="btn btn-success"}}Add new item to this collection{{/link-to}}</p>
+
+<!-- {{#each item in items itemController="items"}}ß
+  <p>
+    {{item.title}}
+  </p>
+{{/each}}
+
+<button class="btn btn-danger" {{action "delete"}}>Delete this auction</button>
+
+<p>{{#link-to 'new-item' this class="btn btn-success"}}New item{{/link-to}}</p> -->

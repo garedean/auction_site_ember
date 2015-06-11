@@ -1,9 +1,10 @@
 <nav class="nav-bar">
   <div class="container">
-    <h1 class="page-header text-center">Southeby's</h1>
+    {{#link-to 'auctions' classNames="page-header-link"}}
+      <h1 class="page-header text-center">Southeby's</h1>
+    {{/link-to}}
 
-      {{#link-to 'items' classNames="top-left"}}All Items{{/link-to}}
-      {{#link-to 'auctions' classNames=""}}Auctions{{/link-to}}
+    <!-- {{#link-to 'items' classNames="top-left"}}All Items{{/link-to}} -->
 
   </div>
 </nav>

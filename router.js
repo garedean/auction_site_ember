@@ -1,8 +1,9 @@
 App.Router.map(function() {
-  this.resource('items', {path: '/'});
-  this.resource('item', {path: 'items/:item_id'});
-  this.resource('new-item');
-  this.resource('auctions');
+  this.resource('auctions', {path: '/'});
+  this.resource('auction', {path: ':auction_id'}, function() {
+    this.resource('new-item');
+  });
   this.resource('new-auction');
-  this.resource('auction', {path: 'auctions/:auction_id'})
+  this.resource('items');
+  // this.resource('item', {path: 'items/:item_id'});
 });

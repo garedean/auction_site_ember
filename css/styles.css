@@ -16,6 +16,10 @@ h1,h2, h3, h4, h5 {
   color: white;
 }
 
+a.page-header-link:hover {
+  text-decoration: none;
+}
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -25,6 +29,7 @@ h1,h2, h3, h4, h5 {
   background: #222;
   border-bottom: 3px solid gold;
   color: white;
+  z-index: 9999;
 }
 
 .nav-bar h1 {
@@ -55,12 +60,16 @@ h1,h2, h3, h4, h5 {
 }
 
 .item-info {
-  margin-top: 40px;
+  margin-top: 20px;
   text-decoration: none;
 }
 
 .description {
   margin-top: 30px;
+}
+
+.estStartingPrice {
+  font-weight: bold;
 }
 
 .items-wrapper a:hover {
@@ -82,9 +91,9 @@ a {
 }
 
 .title {
-  position: relative;
-  top: 10px;
   font-weight: bold;
+  font-size: 2em;
+  z-index: -1;
 }
 
 .singleItemProperty {
