@@ -1,9 +1,14 @@
 <h1>{{name}}</h1>
 
 <button class="btn btn-danger" {{action "delete"}}>Delete</button>
+
 <br>
-<br>
-<p>{{#link-to 'new-item' this class="btn btn-success"}}Add New Item{{/link-to}}</p>
+
+<div {{action 'addItem'}}>
+  {{#link-to 'new-item' this class="btn btn-success"}}
+    Add New Item
+  {{/link-to}}
+</div>
 
 {{# if showItems }}
   {{#each item in items itemController="item"}}

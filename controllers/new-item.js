@@ -1,8 +1,7 @@
 App.NewItemController = Ember.ObjectController.extend({
   actions: {
     save: function() {
-      App.AuctionController.set('showItems', false);
-      debugger;
+      //this.set('showItems', true);
       var item = this.get('model');
       item.save();
 

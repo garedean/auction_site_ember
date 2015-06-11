@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row text-center">
       <div class="col-sm-6 col-sm-offset-3">
-        {{#link-to 'auctions' classNames="page-header-link"}}
+        {{#link-to 'auctions' classNames="page-header-link" }}
           <h1 class="page-header">Southeby's</h1>
         {{/link-to}}
 
@@ -15,15 +15,17 @@
       </div>
     </div>
   </div>
-
-  <div class="footer">
-    <a>CONTACT</a>
-    <a>FAQ</a>
-    <a>PRESS</a>
-    <a>TERMS & CONDITIONS</a>
-  </div>
 </nav>
 
 <div class="container-fluid">
   {{outlet}}
+</div>
+
+<div class="footer">
+  <div class="link-wrapper">
+    <a href="#">CONTACT</a> |
+    <a href="#">FAQ</a> |
+    <a href="#">PRESS</a> |
+    <a href="#">TERMS & CONDITIONS</a>
+  </div>
 </div>
