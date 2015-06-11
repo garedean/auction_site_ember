@@ -3,6 +3,7 @@
 #top, #bottom, #left, #right {
 	background: #c5b358;
 	position: fixed;
+  z-index: 9999;
 }
 
 #left, #right {
@@ -24,6 +25,10 @@
 
 /* Core styles */
 
+* {
+  margin: 0;
+}
+
 html {
   height: 100%;
 }
@@ -31,6 +36,7 @@ html {
 body {
   background: #f3f3f3;
   height: inherit;
+  height: 100%;
 }
 
 #page-border {
@@ -135,7 +141,7 @@ a.page-header-link:hover {
 }
 
 .description {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .estStartingPrice {
@@ -169,4 +175,13 @@ a {
 .singleItemProperty {
   width: 120px;
   display: inline-block;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  z-index: 4;
+  height: 50px;
+  width: 100%;
+  background: #222;
 }
